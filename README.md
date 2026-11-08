@@ -1,6 +1,6 @@
 # Nacional Clube
 
-Site da loja oficial **Nacional Clube**: streetwear nacional com estética do litoral norte paulista.
+Site da loja oficial **Nacional Clube**: streetwear brasileiro que junta a alta costura com a cultura nacional.
 
 ## Estrutura
 
@@ -21,8 +21,8 @@ Coloque as imagens em `img/produtos/` com estes nomes:
 | Arquivo                          | Produto                          |
 | -------------------------------- | -------------------------------- |
 | `camiseta-sao-paulo-garoa.jpg`   | São Paulo — Terra da Garoa       |
-| `camiseta-tropical-cyan.jpg`     | Tropical Cyan • Wash Black       |
-| `bone-veludo-cotele-marrom.jpg`  | Cap Veludo Cotelê Brown          |
+| `camiseta-tropical-cyan.jpg`     | Tropical Ciano • Preto Estonado  |
+| `bone-veludo-cotele-marrom.jpg`  | Boné Veludo Cotelê Marrom        |
 
 ## Como rodar
 

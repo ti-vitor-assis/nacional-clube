@@ -480,6 +480,47 @@ a:hover {
     outline-offset: 2px;
 }
 
+/* ==================== PRODUTO ESGOTADO ==================== */
+/* Foto apagadinha pra mostrar que acabou */
+.esgotado .card-foto img {
+    opacity: 0.5;
+    filter: grayscale(40%);
+}
+
+/* Sem zoom na foto quando tá esgotado */
+.card-produto.esgotado:hover .card-foto img {
+    transform: none;
+}
+
+/* Selo "Esgotado" no canto direito da foto */
+.selo-esgotado {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: var(--azul-escuro);
+    color: var(--creme);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Preço riscado */
+.esgotado .card-preco {
+    color: #9CA3AF;
+    text-decoration: line-through;
+}
+
+/* Botão desativado */
+.btn-garantir:disabled,
+.btn-garantir:disabled:hover {
+    background-color: #E5E7EB;
+    color: #6B7280;
+    cursor: not-allowed;
+}
+
 /* ==================== RODAPÉ ==================== */
 .rodape {
     margin-top: auto;
