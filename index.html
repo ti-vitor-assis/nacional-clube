@@ -51,16 +51,50 @@
 
     <!-- ==================== BANNER (Ilhabela - SP) ==================== -->
     <section class="hero" id="lancamento">
+        <!-- Fundo do banner: as 27 estrelas da bandeira (26 estados + DF) nas posições oficiais,
+             como o céu do Rio na manhã de 15/11/1889. Coordenadas da bandeira oficial. -->
+        <svg class="hero-ceu" viewBox="-680 -280 1360 890" aria-hidden="true"
+            focusable="false">
+            <defs>
+                <path id="estrela" d="M0-1L.2245-.309L.9511-.309L.3633.118L.5878.809L0 .382L-.5878.809L-.3633.118L-.9511-.309L-.2245-.309Z" />
+            </defs>
+
+            <!-- 27 estrelas: 5 tamanhos (31.5 / 26.25 / 21 / 15 / 10.5) -->
+            <g class="estrelas-ceu">
+                <use href="#estrela" transform="translate(-600 -132) scale(31.5)" />
+                <use href="#estrela" transform="translate(-535 177) scale(31.5)" />
+                <use href="#estrela" transform="translate(-625 243) scale(26.25)" />
+                <use href="#estrela" transform="translate(-463 132) scale(15)" />
+                <use href="#estrela" transform="translate(-382 250) scale(26.25)" />
+                <use href="#estrela" transform="translate(-404 323) scale(21)" />
+                <use href="#estrela" transform="translate(228 -228) scale(31.5)" />
+                <use href="#estrela" transform="translate(515 258) scale(31.5)" />
+                <use href="#estrela" transform="translate(617 265) scale(21)" />
+                <use href="#estrela" transform="translate(545 323) scale(26.25)" />
+                <use href="#estrela" transform="translate(368 477) scale(26.25)" />
+                <use href="#estrela" transform="translate(367 551) scale(21)" />
+                <use href="#estrela" transform="translate(441 419) scale(21)" />
+                <use href="#estrela" transform="translate(500 382) scale(26.25)" />
+                <use href="#estrela" transform="translate(365 405) scale(21)" />
+                <use href="#estrela" transform="translate(-280 30) scale(26.25)" />
+                <use href="#estrela" transform="translate(200 -37) scale(21)" />
+                <use href="#estrela" transform="translate(0 330) scale(31.5)" />
+                <use href="#estrela" transform="translate(85 184) scale(26.25)" />
+                <use href="#estrela" transform="translate(0 118) scale(26.25)" />
+                <use href="#estrela" transform="translate(-74 184) scale(21)" />
+                <use href="#estrela" transform="translate(-37 235) scale(15)" />
+                <use href="#estrela" transform="translate(220 495) scale(26.25)" />
+                <use href="#estrela" transform="translate(283 430) scale(21)" />
+                <use href="#estrela" transform="translate(162 412) scale(21)" />
+                <use href="#estrela" transform="translate(-295 390) scale(31.5)" />
+                <use href="#estrela" transform="translate(0 575) scale(10.5)" />
+            </g>
+        </svg>
 
         <p class="hero-convite">Um convite para descobrir</p>
 
-        <!-- Brasão + nome da marca -->
+        <!-- Nome da marca -->
         <div class="hero-marca">
-            <svg class="hero-brasao" width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="#FEF1CF"
-                stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-5.45 9-12V7l-9-5z" />
-                <path d="M12 6l1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5-2.5-2.5 3.5-.5z" />
-            </svg>
             <h1 class="hero-titulo">Nacional Clube</h1>
         </div>
 

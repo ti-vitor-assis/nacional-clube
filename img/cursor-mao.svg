@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Mãozinha do Brasil: amarela, contorno verde, punho azul com faixa branca -->
+  <defs>
+    <g id="mao">
+      <rect x="9" y="1.5" width="5" height="16" rx="2.5" />
+      <rect x="14" y="9" width="4.6" height="10" rx="2.3" />
+      <rect x="18.6" y="10.5" width="4.4" height="9" rx="2.2" />
+      <rect x="23" y="12.5" width="4" height="8" rx="2" />
+      <rect x="3.5" y="15" width="9" height="4.6" rx="2.3" transform="rotate(20 12 17.3)" />
+      <rect x="9" y="15" width="18" height="12" rx="5" />
+    </g>
+  </defs>
+  <!-- contorno verde (desenhado por baixo) -->
+  <use href="#mao" fill="#009440" stroke="#009440" stroke-width="3" stroke-linejoin="round" />
+  <!-- mão amarela -->
+  <use href="#mao" fill="#FFCB00" />
+  <!-- divisão dos dedos -->
+  <g stroke="#009440" stroke-width="1.2" stroke-linecap="round">
+    <line x1="14" y1="12" x2="14" y2="16.5" />
+    <line x1="18.6" y1="13.5" x2="18.6" y2="17.5" />
+    <line x1="23" y1="15" x2="23" y2="18.5" />
+  </g>
+  <!-- punho azul com a faixa branca -->
+  <rect x="10.5" y="25" width="15" height="6" rx="1.5" fill="#002776" stroke="#009440" stroke-width="1.5" />
+  <line x1="12.5" y1="28" x2="23.5" y2="28" stroke="#FFFFFF" stroke-width="1.1" stroke-linecap="round" />
+</svg>

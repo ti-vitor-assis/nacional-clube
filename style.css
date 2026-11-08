@@ -26,6 +26,16 @@ body {
     flex-direction: column;
 }
 
+/* Cursor: mãozinha do Brasil (ponta do dedo é o ponto do clique) */
+html,
+body,
+a,
+button,
+.navbar-toggler:not(:disabled):not(.disabled),
+.btn-garantir {
+    cursor: url('img/cursor-mao.svg') 11 1, url('img/cursor-mao.png') 11 1, pointer;
+}
+
 /* Cor do texto selecionado */
 ::selection {
     background-color: var(--rosa);
@@ -163,6 +173,26 @@ a:hover {
     align-items: center;
     text-align: center;
     padding: 60px 20px;
+    overflow: hidden;
+}
+
+/* Estrelas da bandeira como arte de fundo, centralizadas atrás do texto */
+.hero-ceu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: clamp(460px, 78vw, 1050px);
+    height: auto;
+    opacity: 0.32;
+    pointer-events: none;
+    filter: drop-shadow(0 0 6px rgba(254, 241, 207, 0.3));
+}
+
+/* Textos e botões ficam por cima das estrelas */
+.hero > *:not(.hero-ceu) {
+    position: relative;
+    z-index: 1;
 }
 
 /* Textos do banner não podem ser selecionados */
@@ -194,8 +224,8 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.hero-brasao {
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+.estrelas-ceu {
+    fill: var(--creme);
 }
 
 .hero-titulo {
@@ -476,7 +506,6 @@ a:hover {
     padding: 10px 16px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
     transition: background-color 0.15s;
 }
 
