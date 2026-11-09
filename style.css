@@ -621,3 +621,90 @@ a:hover {
         text-align: left;
     }
 }
+
+/* ==================== AVISO: FRETE GRÁTIS ==================== */
+/* Mini card fixo no canto inferior direito (no celular, ocupa a largura com 16px de margem) */
+.aviso-frete {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    max-width: 320px;
+    margin-left: auto;
+    z-index: 1040;
+    background-color: var(--azul);
+    color: var(--creme);
+    border: 2px solid var(--rosa);
+    border-radius: 6px;
+    padding: 16px 44px 16px 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.aviso-frete.visivel {
+    opacity: 1;
+    transform: none;
+}
+
+.aviso-sobretitulo {
+    font-family: var(--fonte-cormorant);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--rosa);
+    margin: 0;
+    line-height: 1.1;
+}
+
+.aviso-titulo {
+    font-family: var(--fonte-syne);
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin: 2px 0 6px;
+}
+
+.aviso-texto {
+    font-size: 12px;
+    color: rgba(254, 241, 207, 0.85);
+    margin: 0;
+}
+
+.aviso-texto strong {
+    color: var(--creme);
+    letter-spacing: 0.05em;
+}
+
+.aviso-fechar {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    color: var(--creme);
+    font-size: 24px;
+    line-height: 1;
+    padding: 0;
+    opacity: 0.8;
+    transition: opacity 0.15s, color 0.15s;
+}
+
+.aviso-fechar:hover {
+    color: var(--rosa);
+    opacity: 1;
+}
+
+.aviso-fechar:focus {
+    outline: 2px solid var(--rosa);
+    outline-offset: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .aviso-frete {
+        transition: none;
+    }
+}
